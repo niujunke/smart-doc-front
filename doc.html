@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+  <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark bd-navbar">
+    <a class="navbar-brand" href="#">Admin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./doc.html">Documentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-md-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            v1.0
+          </a>
+          <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Download</button>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row flex-xl-nowrap">
+      <div class="col-12 col-md-3 col-xl-2 bd-sidebar  bd-sidebar">
+        <form class="bd-search d-flex align-items-center">
+          <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..."
+            autocomplete="off">
+          <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse"
+            data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false"
+            aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30"
+              height="30" focusable="false">
+              <title>Menu</title>
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                d="M4 7h22M4 15h22M4 23h22" />
+            </svg>
+          </button>
+        </form>
+        <nav class="collapse bd-links" id="bd-docs-nav">
+          <div class="bd-toc-item">
+            <a class="bd-toc-link" data-toggle="collapse" href="#collapseOne" >
+              快速入门
+            </a>
+
+            <ul class="collapse "  id="collapseOne">
+              <li>
+                <a href="/docs/4.0/快速入门/简介/">
+                  简介
+                </a></li>
+              <li>
+                <a href="/docs/4.0/快速入门/下载-bootstrap/">
+                  下载 Bootstrap
+                </a></li>
+              <li>
+                <a href="/docs/4.0/快速入门/目录结构/">
+                  目录结构
+                </a></li>
+              <li>
+                <a href="/docs/4.0/快速入门/browsers-devices/">
+                  Browsers & devices
+                </a></li>
+              <li>
+                <a href="/docs/4.0/快速入门/javascript/">
+                  JavaScript
+                </a></li>
+              <li>
+                <a href="/docs/4.0/快速入门/theming/">
+                  Theming
+                </a></li>
+              <li>
+                <a href="/docs/4.0/快速入门/build-tools/">
+                  Build tools
+                </a></li>
+              <li>
+                <a href="/docs/4.0/快速入门/webpack/">
+                  Webpack
+                </a></li>
+              <li>
+                <a href="/docs/4.0/快速入门/accessibility/">
+                  Accessibility
+                </a></li>
+            </ul>
+          </div>
+          <div class="bd-toc-item">
+            <a class="bd-toc-link" href="#collapseTwo" data-toggle="collapse">
+              Layout
+            </a>
+
+            <ul class="collapse" id="collapseTwo">
+              <li>
+                <a href="/docs/4.0/layout/overview/">
+                  Overview
+                </a></li>
+              <li>
+                <a href="/docs/4.0/layout/grid/">
+                  Grid
+                </a></li>
+              <li>
+                <a href="/docs/4.0/layout/media-object/">
+                  Media object
+                </a></li>
+              <li>
+                <a href="/docs/4.0/layout/utilities-for-layout/">
+                  Utilities for layout
+                </a></li>
+            </ul>
+          </div>
+          <div class="bd-toc-item">
+            <a class="bd-toc-link" href="#collapse3" data-toggle="collapse">
+              Extend
+            </a>
+
+            <ul class="collapse" id="collapse3">
+              <li>
+                <a href="/docs/4.0/extend/approach/">
+                  Approach
+                </a></li>
+              <li>
+                <a href="/docs/4.0/extend/icons/">
+                  Icons
+                </a></li>
+            </ul>
+          </div>
+          <div class="bd-toc-item">
+            <a class="bd-toc-link" href="collapse4">
+              Migration
+            </a>
+
+            <ul class="nav bd-sidenav"></ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" style="border-left: 1px solid rgba(0,0,0,.1);">
+        <h2>
+          Introduction
+        </h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+          Donec sed odio dui.
+        </p>
+        <h2 id="content1">
+          Heading11111111
+        </h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+          Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn" href="#">View details »</a>
+        </p>
+        <h2 id="content2">
+          Heading22222222
+        </h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+          Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn" href="#">View details »</a>
+        </p>
+        <h2 id="content3">
+          Heading333333333
+        </h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+          Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn" href="#">View details »</a>
+        </p>
+        <h2 id="content4">
+          Heading4444444444
+        </h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+          Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn" href="#">View details »</a>
+        </p>
+        <h2 id="content5">
+          Heading5555555555
+        </h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+          Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn" href="#">View details »</a>
+        </p>
+        <h2 id="content6">
+          Heading666666666
+        </h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+          Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn" href="#">View details »</a>
+        </p>
+        <h2 id="content7">
+          Heading7777777777
+        </h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+          Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn" href="#">View details »</a>
+        </p>
+        <h2 id="content8">
+          Heading88
+        </h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+          Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn" href="#">View details »</a>
+        </p>
+        <h2 id="content9">
+          Heading99
+        </h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+          Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn" href="#">View details »</a>
+        </p>
+        <h2 id="content10">
+          Heading10
+        </h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+          Donec sed odio dui.
+        </p>
+        <p>
+          <a class="btn" href="#">View details »</a>
+        </p>
+      </div>
+      <div class="d-none d-xl-block col-xl-2 bd-toc" style="border-left: 1px solid #eee;">
+        <ul class="section-nav">
+          <li class="toc-entry toc-h2">
+            <a href="#content1">Heading11111111</a>
+            <ul>
+              <li class="toc-entry toc-h3"><a href="#content2">Heading222222</a></li>
+              <li class="toc-entry toc-h3"><a href="#content3">Heading3333333</a></li>
+            </ul>
+          </li>
+          <li class="toc-entry toc-h2"><a href="#content4">Heading444444444</a></li>
+          <li class="toc-entry toc-h2">
+            <a href="#content5">Heading55555555</a>
+            <ul>
+              <li class="toc-entry toc-h3"><a href="#content6">Heading66</a></li>
+              <li class="toc-entry toc-h3"><a href="#content7">Heading77</a></li>
+              <li class="toc-entry toc-h3"><a href="#content8">Heading88</a></li>
+              <li class="toc-entry toc-h3"><a href="#content9">Heading99</a></li>
+            </ul>
+          </li>
+          <li class="toc-entry toc-h2"><a href="#content10">Heading10</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

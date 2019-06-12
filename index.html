@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>home</title>
+  <!-- <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script> -->
+  <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Admin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./doc.html">Documentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-md-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            v1.0
+          </a>
+          <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Download</button>
+    </div>
+  </nav>
+  <div class="jumbotron banner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-6 mx-auto col-md-6 order-md-1">
+          <svg t="1560266782271" class="icon" style="max-width:100%" viewBox="0 0 1024 1024" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" p-id="919" xmlns:xlink="http://www.w3.org/1999/xlink" width="400"
+            height="400">
+            <defs>
+              <style type="text/css"></style>
+            </defs>
+            <path
+              d="M93.184 949.248h176.128V842.752H93.184v106.496z m181.248-142.336h-184.32c-17.408 0-30.72 14.336-30.72 30.72V952.32c0 17.408 14.336 30.72 30.72 30.72h184.32c17.408 0 30.72-14.336 30.72-30.72V837.632c0-16.384-14.336-30.72-30.72-30.72zM423.936 949.248h176.128V842.752H423.936v106.496zM604.16 806.912H419.84c-17.408 0-30.72 14.336-30.72 30.72V952.32c0 17.408 14.336 30.72 30.72 30.72h184.32c17.408 0 30.72-14.336 30.72-30.72V837.632c1.024-16.384-13.312-30.72-30.72-30.72zM755.712 949.248H931.84V842.752H755.712v106.496z m179.2-142.336h-184.32c-17.408 0-30.72 14.336-30.72 30.72V952.32c0 17.408 14.336 30.72 30.72 30.72h184.32c17.408 0 30.72-14.336 30.72-30.72V837.632c1.024-16.384-12.288-30.72-30.72-30.72z"
+              fill="#FFA950" p-id="920"></path>
+            <path
+              d="M508.928 331.776c-100.352 0-181.248 89.088-181.248 198.656h363.52c0-109.568-81.92-198.656-182.272-198.656"
+              fill="#DAE6EE" p-id="921"></path>
+            <path
+              d="M92.16 948.224h176.128V841.728H92.16zM424.96 948.224h176.128V841.728H424.96zM755.712 948.224H931.84V841.728H755.712z"
+              fill="#FFE7CF" p-id="922"></path>
+            <path
+              d="M965.632 412.672h-112.64l-25.6-63.488 78.848-76.8c3.072-3.072 6.144-8.192 6.144-13.312s-2.048-9.216-6.144-13.312L786.432 131.072c-7.168-7.168-18.432-7.168-25.6 0l-79.872 77.824-64.512-26.624v-122.88c0-10.24-8.192-18.432-18.432-18.432H429.056c-10.24 0-18.432 8.192-18.432 18.432v122.88l-65.536 25.6-79.872-77.824c-7.168-7.168-18.432-7.168-25.6 0L119.808 245.76c-3.072 3.072-6.144 8.192-6.144 13.312s2.048 9.216 6.144 13.312l79.872 77.824-26.624 62.464h-112.64c-10.24 0-18.432 8.192-18.432 18.432v100.352h36.864V450.56H184.32c7.168 0 14.336-5.12 16.384-10.24l37.888-84.992c3.072-7.168 1.024-15.36-3.072-20.48l-75.776-72.704 93.184-90.112 75.776 72.704c5.12 5.12 13.312 7.168 20.48 3.072l88.064-33.792c7.168-2.048 11.264-9.216 11.264-17.408V79.872h132.096v115.712c0 7.168 5.12 14.336 11.264 16.384l87.04 36.864c7.168 2.048 14.336 1.024 20.48-3.072l76.8-74.752 93.184 90.112-73.728 72.704c-6.144 5.12-7.168 13.312-5.12 20.48l34.816 86.016c2.048 7.168 9.216 12.288 16.384 12.288h107.52V532.48H983.04v-100.352c0-11.264-8.192-19.456-17.408-19.456"
+              fill="#0E5DA1" p-id="923"></path>
+            <path
+              d="M311.296 513.024v18.432H348.16v-18.432C348.16 421.888 421.888 348.16 513.024 348.16c90.112 0 164.864 74.752 164.864 164.864v18.432h36.864v-18.432c0-111.616-90.112-202.752-200.704-202.752-111.616 1.024-202.752 91.136-202.752 202.752"
+              fill="#0E5DA1" p-id="924"></path>
+            <path
+              d="M611.328 531.456v-18.432c0-54.272-44.032-98.304-97.28-98.304-54.272 0-97.28 44.032-97.28 98.304v18.432h36.864v-18.432c0-33.792 26.624-61.44 61.44-61.44 33.792 0 61.44 26.624 61.44 61.44v18.432h34.816zM136.192 530.432h34.816v-35.84h-34.816z"
+              fill="#0E5DA1" p-id="925"></path>
+            <path d="M128 913.408H163.84v-34.816h-35.84zM201.728 913.408h34.816v-34.816h-34.816z" fill="#FFA950"
+              p-id="926"></path>
+            <path
+              d="M854.016 530.432h34.816v-35.84h-34.816zM747.52 264.192l25.6-25.6 24.576 25.6-24.576 24.576zM225.28 258.048l24.576-24.576 24.576 24.576-24.576 25.6zM495.616 154.624h34.816v-35.84h-34.816zM165.888 656.384v123.904h34.816V673.792h293.888v106.496h34.816V673.792h293.888v106.496H860.16V656.384c0-9.216-8.192-17.408-17.408-17.408H530.432V502.784h-34.816v135.168H184.32c-10.24 1.024-18.432 8.192-18.432 18.432"
+              fill="#0E5DA1" p-id="927"></path>
+            <path
+              d="M458.752 913.408h34.816v-34.816h-34.816zM531.456 913.408h34.816v-34.816h-34.816zM789.504 913.408h34.816v-34.816h-34.816zM862.208 913.408h35.84v-34.816h-35.84z"
+              fill="#FFA950" p-id="928"></path>
+          </svg></div>
+        <div class="col-md-6 order-md-2 text-center text-md-left pr-md-5">
+          <h1 class="display-4">Hello, world!</h1>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+          <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-light container-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 ">
+          <div class="thumbnail bg-light">
+            <img src="https://themes.getbootstrap.com/wp-content/uploads/2019/03/screenshot-1-600x450.png" alt="...">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>Create lists of content in a card with a flush list group.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+                  role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 ">
+          <div class="thumbnail bg-light">
+            <img src="https://themes.getbootstrap.com/wp-content/uploads/2019/03/screenshot-1-600x450.png" alt="...">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>Create lists of content in a card with a flush list group.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+                  role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 ">
+          <div class="thumbnail bg-light">
+            <img src="https://themes.getbootstrap.com/wp-content/uploads/2019/03/screenshot-1-600x450.png" alt="...">
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>Create lists of content in a card with a flush list group.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+                  role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark footer">
+    <div class="container-fluid">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
